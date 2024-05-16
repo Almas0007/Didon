@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetConstraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/about_film_style_top_radius_32dp"
+        android:paddingBottom="8dp">
+        <View
+            android:id="@+id/divider_sheet"
+            android:layout_width="64dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/view_bottom_sheet"
+            />
+
+        <TextView
+            android:id="@+id/select_language_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/sf_bold"
+            android:text="Шығу"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/btnSelectEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:paddingBottom="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            >
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Сіз шынымен аккаунтыңыздан"
+               android:fontFamily="@font/sf_regular"
+               android:textColor="@color/grey_400"
+               android:textSize="16sp"
+               />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/button_shape"
+                android:fontFamily="@font/sf_semibold"
+                android:text="Иә, шығу"
+                android:textColor="?attr/colorPrimaryVariant"
+                android:textAllCaps="false"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/fui_transparent"
+                android:fontFamily="@font/sf_semibold"
+                android:text="Жоқ"
+                android:textColor="@color/grey_500"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

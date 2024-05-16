@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Didon" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/grey_800</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="backgroundColor">@color/grey_900</item>
+        <item name="colorButtonNormal">@color/primary_500</item>
+        <item name="strokeColor">@color/grey_700</item>
+        <item name="track">@color/primary_400</item>
+        <!-- Text -->
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="iconTint">@color/white</item>
+        <item name="seekBarStyle">@color/primary_500</item>
+        <item name="colorSecondary">@color/grey_800</item>
+        <item name="colorSecondaryVariant">@color/grey_800</item>
+        <item name="colorOnSecondary">@color/grey_400</item>
+
+        <!-- Status bar color. -->
+        <item name="colorSwitchThumbNormal">@color/primary_400</item>
+    </style>
+        <style name="BottomSheetDialogTheme" parent="Theme.MaterialComponents.Dialog">
+            <item name="bottomSheetStyle">@drawable/about_film_style_top_radius_32dp</item>
+            <item name="android:windowIsFloating">false</item>
+            <item name="android:windowSoftInputMode">adjustResize</item>
+            <item name="hintEnabled">false</item>
+            <item name="android:topLeftRadius">15dp</item>
+            <item name="android:topRightRadius">15dp</item>
+            <item name="android:background">@android:color/transparent</item>
+
+            <item name="colorPrimary">@color/grey_800</item>
+            <item name="colorPrimaryVariant">@color/white</item>
+            <item name="backgroundColor">@color/grey_900</item>
+            <item name="colorButtonNormal">@color/primary_500</item>
+            <item name="strokeColor">@color/grey_700</item>
+            <item name="track">@color/primary_400</item>
+            <!-- Text -->
+            <item name="colorOnPrimary">@color/white</item>
+            <!-- Secondary brand color. -->
+            <item name="iconTint">@color/white</item>
+            <item name="seekBarStyle">@color/primary_500</item>
+            <item name="colorSecondary">@color/grey_800</item>
+            <item name="colorSecondaryVariant">@color/grey_800</item>
+            <item name="colorOnSecondary">@color/grey_400</item>
+        </style>
+
+</resources>

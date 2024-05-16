@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="style_corner_for_image_12dp">
+        <item name="cornerSize">12dp</item>
+    </style>
+    <style name="style_corner_for_image_60dp">
+        <item name="cornerSize">45dp</item>
+    </style>
+    <style name="style_corner_for_image_8dp">
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="style_editText_Oz" >
+        <item name="android:textCursorDrawable">@drawable/text_cursor_drawable_edit_text</item>
+        <item name="android:textColorHighlight">@color/primary_400</item>
+        <item name="colorControlNormal">@color/primary_900</item>
+        <item name="colorControlActivated">@color/primary_900</item>
+        <item name="colorAccent">?attr/colorButtonNormal</item>
+    </style>
+    <style name="style_editText_info" >
+        <item name="android:textCursorDrawable">@drawable/text_cursor_drawble_info</item>
+        <item name="android:textColorHighlight">@color/grey_400</item>
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/black</item>
+        <item name="colorAccent">@color/grey_900</item>
+    </style>
+
+    <style name="SwitchButtonStyle">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <dimen name="divider_padding_start">8dp</dimen>
+    <dimen name="divider_padding_end">8dp</dimen>
+
+</resources>

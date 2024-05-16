@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1045402244959",
+    "firebase_url": "https://didon-266c1-default-rtdb.firebaseio.com",
+    "project_id": "didon-266c1",
+    "storage_bucket": "didon-266c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045402244959:android:72ee7f5b5554025fab88ea",
+        "android_client_info": {
+          "package_name": "kz.qarapaiymstudios.didon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTM0W2P9y3cu3Fsl-nle9qd7t8X49xra0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

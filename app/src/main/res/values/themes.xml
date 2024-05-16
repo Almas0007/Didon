@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Didon" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="colorButtonNormal">@color/primary_500</item>
+        <item name="strokeColor">@color/grey_200</item>
+        <item name="track">@color/grey_300</item>
+
+        <!-- Text -->
+        <item name="colorOnPrimary">@color/grey_900</item>
+
+        <!-- Secondary brand color. -->
+
+        <item name="colorSecondary">@color/grey_100</item>
+        <item name="colorSecondaryVariant">@color/primary_50</item>
+        <item name="seekBarStyle">@color/primary_500</item>
+        <item name="colorOnSecondary">@color/grey_400</item>
+        <item name="colorSwitchThumbNormal">@color/grey_300</item>
+        <!-- Status bar color. -->
+        <item name="iconTint">@color/grey_800</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+
+    <style name="Theme.Didon" parent="Base.Theme.Didon" />
+
+    <style name="BottomSheetDialogTheme" parent="Theme.MaterialComponents.Dialog">
+        <item name="bottomSheetStyle">@drawable/about_film_style_top_radius_32dp</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="hintEnabled">false</item>
+        <item name="android:topLeftRadius">15dp</item>
+        <item name="android:topRightRadius">15dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="colorButtonNormal">@color/primary_500</item>
+        <item name="strokeColor">@color/grey_200</item>
+        <item name="track">@color/grey_300</item>
+        <!-- Text -->
+        <item name="colorOnPrimary">@color/grey_900</item>
+        <!-- Secondary brand color. -->
+
+        <item name="colorSecondary">@color/grey_100</item>
+        <item name="colorSecondaryVariant">@color/primary_50</item>
+        <item name="seekBarStyle">@color/primary_500</item>
+        <item name="colorOnSecondary">@color/grey_400</item>
+        <item name="colorSwitchThumbNormal">@color/grey_300</item>
+        <!-- Status bar color. -->
+        <item name="iconTint">@color/grey_800</item>
+    </style>
+</resources>

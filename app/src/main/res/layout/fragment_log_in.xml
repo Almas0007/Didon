@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.user.LogInFragment">
+    <ImageButton
+        android:id="@+id/btnBackWelcomeFragment"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/fui_transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/sf_bold"
+        android:text="Кіру"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/btnBackWelcomeFragment"
+        app:layout_constraintTop_toBottomOf="@+id/btnBackWelcomeFragment" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/sf_regular"
+        android:text="Аккаунтқа кіріңіз"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/sf_bold"
+        android:text="Email"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/editTextEmailLayoutInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <EditText
+
+            android:id="@+id/editTextEmailLogIn"
+            android:layout_width="match_parent"
+
+            android:layout_height="56dp"
+            android:background="@drawable/style_edittext_on_any_touch"
+            android:drawableStart="@drawable/ic_message"
+            android:drawableLeft="@drawable/ic_message"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/sf_regular"
+
+            android:hint="Сіздің email"
+            android:inputType="textEmailAddress"
+
+
+            android:paddingStart="16dp"
+            android:textColor="?attr/colorOnPrimary"
+            android:textColorHint="@color/grey_400"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:theme="@style/style_editText_Oz"/>
+
+        <TextView
+            android:id="@+id/textTvErrorEmailLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/sf_regular"
+            android:text="Қате формат"
+            android:textColor="@color/red"
+
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/sf_bold"
+        android:text="Құпия сөз"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmailLayoutInput"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailLayoutInput" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextPasswordLogIn"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/style_edittext_on_any_touch"
+        android:drawableStart="@drawable/ic_password"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/sf_regular"
+        android:hint="Сіздің құпия сөзіңіз"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="?attr/colorOnPrimary"
+        android:textColorHint="@color/grey_400"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEmailLayoutInput"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmailLayoutInput"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        android:theme="@style/style_editText_Oz"
+        />
+    <ImageButton
+        android:id="@+id/btnShowPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/editTextPasswordLogIn"
+        app:layout_constraintBottom_toBottomOf="@id/editTextPasswordLogIn"
+        app:layout_constraintEnd_toEndOf="@id/editTextPasswordLogIn"
+        android:src="@drawable/ic_password_show"
+        android:background="@color/fui_transparent"
+        android:paddingEnd="16dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/layoutbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPasswordLogIn"
+        app:layout_constraintStart_toStartOf="@+id/editTextPasswordLogIn"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordLogIn">
+
+        <TextView
+            android:id="@+id/textTvErrorResultLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/sf_regular"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/red"
+            android:layout_marginBottom="24dp"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogInApp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/button_shape"
+            android:fontFamily="@font/sf_semibold"
+            android:text="Кіру"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/layoutbtn"
+        app:layout_constraintStart_toStartOf="@id/layoutbtn"
+        app:layout_constraintEnd_toEndOf="@id/layoutbtn"
+        >
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/sf_regular"
+            android:gravity="end"
+            android:text="Аккаунтыныз жоқ па? "
+            android:textColor="@color/grey_500" />
+
+        <TextView
+            android:id="@+id/btnTextTransitionForRegIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/sf_semibold"
+            android:text="Тіркелу"
+            android:textColor="@color/primary_300" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

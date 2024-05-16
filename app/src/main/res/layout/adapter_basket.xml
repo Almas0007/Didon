@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:background="@drawable/button_shape"
+    android:backgroundTint="@color/grey_50">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="130dp"
+        android:layout_height="170dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@color/grey_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/style_corner_for_image_12dp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/sf_bold"
+        android:maxLines="1"
+        android:text="Куртка АрктикаКуртка АрктикаКуртка АрктикаКуртка Арктика"
+        android:textColor="@color/grey_800"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgIcon"
+        app:layout_constraintTop_toTopOf="@id/imgIcon" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/sf_light"
+        android:text="Сатылым жері:"
+        android:textColor="@color/primary_500"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/imgIcon"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sf_light"
+        android:text="Толық ақпарат:"
+        android:textColor="@color/grey_500"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/tvLocation"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocation" />
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sf_light"
+        android:text="Жалпы сомма:"
+        android:textColor="@color/grey_500"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/imgIcon"
+        app:layout_constraintTop_toBottomOf="@+id/imgIcon" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/sf_light"
+        android:text="дана"
+        android:textColor="@color/grey_500"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvQuantity"
+        app:layout_constraintStart_toEndOf="@+id/tvQuantity" />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/sf_light"
+        android:text="теңге"
+        android:textColor="@color/grey_500"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPriceItem"
+        app:layout_constraintStart_toEndOf="@+id/tvPriceItem" />
+
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/sf_light"
+        android:text="теңге"
+        android:textColor="@color/purple_700"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPriceItem2"
+        app:layout_constraintStart_toEndOf="@+id/tvPriceItem2" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="-2dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/sf_medium"
+        android:maxLines="1"
+        android:text="Алматы қаласы"
+        android:textColor="@color/primary_300"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/imgIcon"
+        app:layout_constraintTop_toBottomOf="@id/text" />
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/sf_medium"
+        android:maxLines="1"
+        android:text="12"
+        android:textColor="@color/grey_700"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/text3"
+        app:layout_constraintTop_toBottomOf="@+id/text3" />
+
+    <TextView
+        android:id="@+id/tvPriceItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/sf_medium"
+        android:maxLines="1"
+        android:text="9900"
+        android:textColor="@color/grey_700"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tvQuantity"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuantity" />
+
+    <TextView
+        android:id="@+id/tvPriceItem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="-3dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/sf_medium"
+        android:maxLines="1"
+        android:text="9900"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/text6"
+        app:layout_constraintStart_toEndOf="@+id/text6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
